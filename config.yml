@@ -47,7 +47,22 @@ homebrew_installed_packages:
   - dockutil
   - watch
   - zplug
-
+  - bat
+  - packer
+  - findutils --default-names
+  - gnu-sed --default-names
+  - gnu-tar --default-names
+  - gnu-which --default-names
+  - gnutls --default-names
+  - grep --default-names
+  - coreutils
+  - binutils
+  - diffutils
+  - prettyping
+  - fzf
+  - diff-so-fancy
+  - fd
+  - tdlr
 
 homebrew_taps:
   - homebrew/core

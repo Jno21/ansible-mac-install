@@ -23,4 +23,7 @@ ansible-galaxy install -r requirements.yml -p roles
 # launch playbook
 ansible-playbook run.playbook.yml --ask-become-pass
 
+# install fzf completion and keybind
+$(brew --prefix)/opt/fzf/install
+
 cd $CURRENT
