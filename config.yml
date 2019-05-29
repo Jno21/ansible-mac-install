@@ -1,6 +1,7 @@
 ---
 project_dir: ~/.script
 downloads_dir: ~/Downloads
+dircolors_dir: ~/.dircolors
 
 downloads: ~/.ansible-downloads/
 

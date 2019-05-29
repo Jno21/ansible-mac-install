@@ -2,6 +2,17 @@
 - name: Load git config
   command: git config --global core.excludesfile ~/.gitignore
 
+- name: Create directory for dircorlors
+  file:
+    path: "{{ dircolors_dir }}"
+    state: directory
+
+- name: "DIRCOLORS | Copy dircolors file"
+  copy:
+    src: "files/dircolors.256dark"
+    dest: "{{ project_dir }}/dircolors.256dark"
+    mode: 0755
+
 - name: Create directory for Project
   file:
     path: "{{ project_dir }}/script"
