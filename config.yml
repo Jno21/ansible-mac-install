@@ -29,7 +29,6 @@ homebrew_installed_packages:
   - git
   - go
   - gpg
-  - node
   - yarn
   - nvm
   - ssh-copy-id
@@ -48,7 +47,6 @@ homebrew_installed_packages:
   - watch
   - zplug
   - bat
-  - packer
   - findutils --default-names
   - gnu-sed --default-names
   - gnu-tar --default-names
@@ -63,6 +61,11 @@ homebrew_installed_packages:
   - diff-so-fancy
   - fd
   - tdlr
+  - ack
+  - hadolint
+  - tfswitch
+  - dive
+  - nmap
 
 homebrew_taps:
   - homebrew/core
@@ -77,24 +80,20 @@ homebrew_cask_apps:
   - sequel-pro
   - google-cloud-sdk
   - google-backup-and-sync
-  - atom
+  - visual-studio-code
   - alfred
   - iterm2
   - spotify
-  - vagrant
   - virtualbox
   - dash
   - cleanmymac
   - etcher
   - tunnelblick
-  - gitkraken
   - docker
   - vlc
-  - istat-menus
   - franz
   - dashlane
   - postman
-  - polymail
   - emacs
 
 npm_global_package:
@@ -108,6 +107,7 @@ mas_installed_apps:
   - { id: 409203825, name: "Numbers" }
   - { id: 409201541, name: "Pages" }
   - { id: 803453959, name: "Slack" }
+  - { id: 1176895641, name: "Spark" }
 
 mas_upgrade_all_apps: yes
 
@@ -134,8 +134,8 @@ dockitems_disabled:
   - Keynote
 
 dockitems_enabled:
-  - name: Polymail
-    path: "/Applications/Polymail.app"
+  - name: Spark
+    path: "/Applications/Spark.app"
     pos: 1
   - name: iTerm
     path: "/Applications/iTerm.app"
@@ -161,9 +161,6 @@ dockitems_enabled:
   - name: Atom
     path: "/Applications/Atom.app"
     pos: 12
-  - name: GitKraken
-    path: "/Applications/GitKraken.app"
-    pos: 13
   - name: Dash
     path: "/Applications/Dash.app"
     pos: 14
