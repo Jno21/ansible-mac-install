@@ -70,7 +70,6 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
-  - homebrew/php
   - caskroom/fonts
 
 homebrew_cask_appdir: /Applications
@@ -84,10 +83,8 @@ homebrew_cask_apps:
   - alfred
   - iterm2
   - spotify
-  - virtualbox
   - dash
   - cleanmymac
-  - etcher
   - tunnelblick
   - docker
   - vlc
