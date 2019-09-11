@@ -10,7 +10,7 @@
 - name: "DIRCOLORS | Copy dircolors file"
   copy:
     src: "files/dircolors.256dark"
-    dest: "{{ project_dir }}/dircolors.256dark"
+    dest: "{{ dircolors_dir }}/dircolors.256dark"
     mode: 0755
 
 - name: Create directory for Project
@@ -37,12 +37,11 @@
     repo: "git://github.com/robbyrussell/oh-my-zsh.git"
     dest: "~/.oh-my-zsh"
 
-#- name: "ZSH | Download theme"
-#  get_url: https://raw.githubusercontent.com/denysdovhan/spaceship-zsh-theme/master/install.zsh
-#    dest: "/tmp/spaceship/"
-
-#- name: "ZSH | Install theme"
-#  script: /tmp/spaceship/install.zsh
+- name: "ZSH | Create link for Spaceship theme"
+  file:
+    scr: "/usr/local/lib/node_modules/spaceship-prompt/spaceship.zsh"
+    dest: "~/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+    state: link
 
 - name: "ZSH | Download plugins zsh-completions"
   git:

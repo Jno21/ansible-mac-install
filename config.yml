@@ -25,7 +25,6 @@ homebrew_installed_packages:
   - autoconf
   - automake
   - bash-completion
-  - chromedriver
   - git
   - go
   - gpg
@@ -40,19 +39,18 @@ homebrew_installed_packages:
   - mas
   - ncdu
   - packer
-  - terraform
   - zsh
   - tree
   - dockutil
   - watch
   - zplug
   - bat
-  - findutils --default-names
-  - gnu-sed --default-names
-  - gnu-tar --default-names
-  - gnu-which --default-names
-  - gnutls --default-names
-  - grep --default-names
+  - findutils
+  - gnu-sed
+  - gnu-tar
+  - gnu-which
+  - gnutls
+  - grep
   - coreutils
   - binutils
   - diffutils
@@ -60,18 +58,18 @@ homebrew_installed_packages:
   - fzf
   - diff-so-fancy
   - fd
-  - tdlr
+  - tldr
   - ack
   - hadolint
-  - tfswitch
+  - tfenv
   - dive
   - nmap
 
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
-  - homebrew/php
   - caskroom/fonts
+  - wagoodman/dive
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -84,10 +82,8 @@ homebrew_cask_apps:
   - alfred
   - iterm2
   - spotify
-  - virtualbox
   - dash
   - cleanmymac
-  - etcher
   - tunnelblick
   - docker
   - vlc
@@ -167,6 +163,6 @@ dockitems_enabled:
   - name: Franz
     path: "/Applications/Franz.app"
     pos: 15
-  - name: Préférences Système
+  - name: System Preferences
     path: "/Applications/System Preferences.app"
     pos: 16
