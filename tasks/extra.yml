@@ -39,7 +39,7 @@
 
 - name: "ZSH | Create link for Spaceship theme"
   file:
-    scr: "/usr/local/lib/node_modules/spaceship-prompt/spaceship.zsh"
+    src: "/usr/local/lib/node_modules/spaceship-prompt/spaceship.zsh"
     dest: "~/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
     state: link
 
